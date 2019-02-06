@@ -14,9 +14,9 @@ Por meio do plugin fileuploadmulti em conjunto com ajax foi possivel enviar mult
 ![sem titulo](https://user-images.githubusercontent.com/29003914/52319112-1c296000-29af-11e9-92ac-661a3206644a.png)
 
 <br>Para gerar um código para cada requerimento apos finalizar o formulários de requerimento é gerado um code hexadecimal de tamanho 6. Para isso foi necessário implantar funções do próprio php. 
-<br><b>Strtoupper</b> ele permite transformar toda stringer em letras maiúsculas.
-<br><b>Substr</b> é responsável por retornar um pedaço da string.
-<br><b>md5</b>Retorna o hash como um número hexadecimal.
+<br><b>Strtoupper </b> ele permite transformar toda stringer em letras maiúsculas.
+<br><b>Substr </b> é responsável por retornar um pedaço da string.
+<br><b>md5 </b>Retorna o hash como um número hexadecimal.
 <br> Para que seja aleatorio tambem foi preciso usar outra função a <b>date</b>, com ela foi possivel gerar varios codigos diferentes pois a junção da data com horario atual nunca serão iguais.
 ![sem titulo](https://user-images.githubusercontent.com/29003914/52319563-8b07b880-29b1-11e9-87ab-7aa5d82cecfd.png)
 
