@@ -10,3 +10,35 @@ return mysql_real_escape_string($var);<br>
 function mysql_filtro_html($var){<br>
 return htmlentities(mysql_filtro($var));<br>
 }
+
+<br>
+
+Por meio do plugin fileuploadmulti em conjunto com ajax foi possivel enviar multiplos arquivos sem que fosse nescessario sair da pagina, atual do requerimento atraves do acesso externo.
+<br>
+
+<script type="text/javascript"><br>
+$(document).ready(function()<br>
+     {<br>
+     var settings = {<br>
+        url: "home/importar.php?ses=",<br>
+        method: "POST",<br>
+		
+    	allowedTypes:"jpg,png,pdf,jpeg",<br>
+        fileName: "file",<br>
+        multiple: false,<br>
+        onSuccess:function(files,data,xhr)<br>
+        {<br>
+           //faz alguma coisa<br>
+       },<br>
+         afterUploadAll:function()<br>
+         {<br>
+            $(".upload-bar").css("animation-play-state","paused");<br>
+         },<br>
+        onError: function(files,status,errMsg)<br>
+        { <br>      
+            alert(errMsg);<br>
+        }<br>
+     }<br>
+     $("#mulitplefileuploader").uploadFile(settings);<br>
+     });<br>
+</script>
