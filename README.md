@@ -3,10 +3,10 @@ Para garantir melhor segurança foi implementado funções que deixam mais difí
 
 <p><h3><b>Função destinada a proteção (login)</b></h3></p>
 
-function mysql_filtro($var){
-if(get_magic_quotes_gpc()) $var = stripslashes($var);
-return mysql_real_escape_string($var);
-} //proteção contra sql injector e outros
-function mysql_filtro_html($var){
-return htmlentities(mysql_filtro($var));
+function mysql_filtro($var){<br>
+if(get_magic_quotes_gpc()) $var = stripslashes($var);<br>
+return mysql_real_escape_string($var);<br>
+} //proteção contra sql injector e outros<br>
+function mysql_filtro_html($var){<br>
+return htmlentities(mysql_filtro($var));<br>
 }
