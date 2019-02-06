@@ -18,6 +18,7 @@ Por meio do plugin fileuploadmulti em conjunto com ajax foi possivel enviar mult
 <br><b>Substr </b> é responsável por retornar um pedaço da string.
 <br><b>md5 </b>Retorna o hash como um número hexadecimal.
 <br> Para que seja aleatorio tambem foi preciso usar outra função a <b>date</b>, com ela foi possivel gerar varios codigos diferentes pois a junção da data com horario atual nunca serão iguais.
+<br>http://hayageek.github.io/jQuery-Upload-File/4.0.11/jquery.uploadfile.min.js
 ![sem titulo](https://user-images.githubusercontent.com/29003914/52319563-8b07b880-29b1-11e9-87ab-7aa5d82cecfd.png)
 
 
